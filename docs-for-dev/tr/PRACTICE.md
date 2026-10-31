@@ -111,6 +111,6 @@ Geliştirme kurulumu güncellendikten sonra yeni arayüzlerin kaydedilmesi için
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/services/practice/](../../deeptutor/services/practice/)
-- [deeptutor/api/routers/practice.py](../../deeptutor/api/routers/practice.py)
-- [tests/api/test_practice.py](../../tests/api/test_practice.py)
+- [deeptutor/services/practice/](../../../deeptutor/services/practice/)
+- [deeptutor/api/routers/practice.py](../../../deeptutor/api/routers/practice.py)
+- [tests/api/test_practice.py](../../../tests/api/test_practice.py)

@@ -87,5 +87,5 @@ Arka ucun önünde bir ters proxy varsa adresini `trusted_proxies` içine ekleyi
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/api/security_guard.py](../../deeptutor/api/security_guard.py)
-- [tests/api/test_security_guard.py](../../tests/api/test_security_guard.py)
+- [deeptutor/api/security_guard.py](../../../deeptutor/api/security_guard.py)
+- [tests/api/test_security_guard.py](../../../tests/api/test_security_guard.py)

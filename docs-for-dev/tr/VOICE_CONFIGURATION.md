@@ -46,12 +46,12 @@ Sınırsız yeniden denemeler eklemek yerine iptali ve yapılandırılmış zama
 
 | Sorumluluk | Uygulama |
 | --- | --- |
-| Profiller ve çözümleme | [voice/config.py](../../deeptutor/services/voice/config.py) |
-| Model/parametre ipuçları | [voice/options.py](../../deeptutor/services/voice/options.py) |
-| Ses keşfi | [voice/discovery.py](../../deeptutor/services/voice/discovery.py) |
-| Önizleme | [voice/preview.py](../../deeptutor/services/voice/preview.py) |
-| Sağlayıcı protokolleri | [voice/adapters/](../../deeptutor/services/voice/adapters/) |
-| Ses dönüştürme | [voice/audio.py](../../deeptutor/services/voice/audio.py) |
+| Profiller ve çözümleme | [voice/config.py](../../../deeptutor/services/voice/config.py) |
+| Model/parametre ipuçları | [voice/options.py](../../../deeptutor/services/voice/options.py) |
+| Ses keşfi | [voice/discovery.py](../../../deeptutor/services/voice/discovery.py) |
+| Önizleme | [voice/preview.py](../../../deeptutor/services/voice/preview.py) |
+| Sağlayıcı protokolleri | [voice/adapters/](../../../deeptutor/services/voice/adapters/) |
+| Ses dönüştürme | [voice/audio.py](../../../deeptutor/services/voice/audio.py) |
 
 Bir adaptör eklerken kimlik bilgisi işlemeyi, uç nokta normalleştirmeyi, kod çözmeyi,
 zaman aşımı/iptali ve hata maskelemeyi test edin. Canlı kontrolleri, sahte (mock)

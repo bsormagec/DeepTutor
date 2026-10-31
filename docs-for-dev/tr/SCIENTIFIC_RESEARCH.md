@@ -94,7 +94,7 @@ tutulur; sağlayıcı hız sınırı hataları görünür kalır. [arXiv API bel
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/tools/research_tools.py](../../deeptutor/tools/research_tools.py)
-- [deeptutor/services/research/primitives.py](../../deeptutor/services/research/primitives.py)
-- [tests/services/research/test_primitives.py](../../tests/services/research/test_primitives.py)
-- [tests/services/research/test_mcp_boundaries.py](../../tests/services/research/test_mcp_boundaries.py)
+- [deeptutor/tools/research_tools.py](../../../deeptutor/tools/research_tools.py)
+- [deeptutor/services/research/primitives.py](../../../deeptutor/services/research/primitives.py)
+- [tests/services/research/test_primitives.py](../../../tests/services/research/test_primitives.py)
+- [tests/services/research/test_mcp_boundaries.py](../../../tests/services/research/test_mcp_boundaries.py)

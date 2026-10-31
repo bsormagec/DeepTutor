@@ -43,7 +43,7 @@ Akış, adaptörün sunduğu yapılandırılmış SSE yaşam döngüsü dışın
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/services/subagent/hermes_remote.py](../../deeptutor/services/subagent/hermes_remote.py)
-- [deeptutor/services/subagent/hermes_remote_client.py](../../deeptutor/services/subagent/hermes_remote_client.py)
-- [deeptutor/services/subagent/hermes_remote_events.py](../../deeptutor/services/subagent/hermes_remote_events.py)
-- [tests/services/test_hermes_remote_backend.py](../../tests/services/test_hermes_remote_backend.py)
+- [deeptutor/services/subagent/hermes_remote.py](../../../deeptutor/services/subagent/hermes_remote.py)
+- [deeptutor/services/subagent/hermes_remote_client.py](../../../deeptutor/services/subagent/hermes_remote_client.py)
+- [deeptutor/services/subagent/hermes_remote_events.py](../../../deeptutor/services/subagent/hermes_remote_events.py)
+- [tests/services/test_hermes_remote_backend.py](../../../tests/services/test_hermes_remote_backend.py)

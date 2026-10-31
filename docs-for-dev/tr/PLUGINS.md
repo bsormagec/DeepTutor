@@ -12,8 +12,8 @@ route'u ve statik sayfa bildirir.
 
 Bir paket, `deeptutor.plugin/v1` şemasını kullanan statik bir
 `deeptutor.plugin.json` dosyası sunar. Tam alanlar için
-[`manifest.py`](../../deeptutor/plugins/manifest.py) dosyasını ve
-[örnek manifesti](../examples/learning_echo/learning_echo/deeptutor.plugin.json)
+[`manifest.py`](../../../deeptutor/plugins/manifest.py) dosyasını ve
+[örnek manifesti](../../examples/learning_echo/learning_echo/deeptutor.plugin.json)
 okuyun. Manifest; kimlik/sürüm, DeepTutor/API uyumluluğu, izin beyanı, bağımlılık
 kapanımı ve türlenmiş uzantıları bildirir. Bilinmeyen alanlar ve geçersiz yollar
 reddedilir.
@@ -31,14 +31,14 @@ reddedilir.
 Yerleşik kimlikler önceliklidir. Her uzantı kendi türlenmiş protokolünü korur.
 Mevcut Python entry-point grupları, bir kök manifest varsa onun onayına uyar;
 yeni paketler manifestsiz eski yola güvenmemelidir. Keşif, üçüncü taraf kodunu
-içe aktarmadan yalnızca meta verileri okur. [Kayıt defteri](../../deeptutor/plugins/registry.py);
+içe aktarmadan yalnızca meta verileri okur. [Kayıt defteri](../../../deeptutor/plugins/registry.py);
 kullanılabilir, onay gerektiren, etkin, devre dışı, uyumsuz, bozuk ve kullanımdan
 kaldırılmış durumları birbirinden ayırır.
 
 ## Kurulum ve onay
 
 Yaşam döngüsü komutları için `deeptutor plugin --help` çalıştırın. Yönetilen kurulum,
-yerel bir wheel'i kabul eder veya gömülü [`catalog.json`](../../deeptutor/plugins/catalog.json)
+yerel bir wheel'i kabul eder veya gömülü [`catalog.json`](../../../deeptutor/plugins/catalog.json)
 içindeki gözden geçirilmiş bir girdiyi çözümler. Katalog gezintisi ve sürüm çözümleme
 çevrimdışıdır; açık kurulum, sabitlenmiş artefaktı indirir. Rastgele URL ile kurulum
 yapan bir yükleyici ve otomatik arka plan yükseltmesi yoktur.
@@ -57,15 +57,15 @@ durumu korur; saklanan sürümler geri almayı destekler. Ana makineye kurulu ha
 eklentilerin yükseltmelerinde, zaten içe aktarılmış Python modüllerinin değişmesi için
 yeniden başlatma gerekir.
 
-Sahibi [`lifecycle.py`](../../deeptutor/plugins/lifecycle.py) dosyasıdır; durum,
+Sahibi [`lifecycle.py`](../../../deeptutor/plugins/lifecycle.py) dosyasıdır; durum,
 çalışma zamanı dizinindeki (runtime home) `data/user/settings/plugins.json` altında
 tutulur. API yaşam döngüsü değişiklikleri yönetici yetkilendirmesi gerektirir.
-[Eklenti testleri](../../tests/plugins/) manifest, artefakt, işlem, kurtarma ve onay
+[Eklenti testleri](../../../tests/plugins/) manifest, artefakt, işlem, kurtarma ve onay
 sınırlarını kapsar.
 
 ## Worker protokolü ve iptal
 
-[`runtime.py`](../../deeptutor/plugins/runtime.py), eklenti ortamının Python'unu
+[`runtime.py`](../../../deeptutor/plugins/runtime.py), eklenti ortamının Python'unu
 kullanarak bir worker modülü başlatır. Worker bildirimleri onaylı manifesti aşamaz.
 Eski worker'lar stdin/stdout üzerinden tek bir JSON isteği ve yanıtı alışverişi yapar.
 
@@ -90,7 +90,7 @@ Worker'lar bildirilen method/yolu, normalleştirilmiş sorgu değerlerini ve sı
 JSON gövdesini alır; ana makine çerezlerini, bearer token'larını veya kimlik doğrulama
 başlıklarını almaz. Yanıtların doğrulanmış JSON durumu/gövdesi ve kısıtlı
 `Cache-Control` değeri vardır; yönlendirmeler ve kimlik doğrulama yanıtları ana
-makineye aittir. [API testlerine](../../tests/api/test_plugins_router.py) bakın.
+makineye aittir. [API testlerine](../../../tests/api/test_plugins_router.py) bakın.
 
 Bir statik sayfa, `deeptutor.plugin-frontend-page/v1` şemasını, tek bir giriş noktasını
 ve açık bir varlık kapanımını bildirir. Yalnızca onaylı, normal paket dosyaları
@@ -100,9 +100,9 @@ sondaki eğik çizgiyi koruyun.
 
 Sayfalar, `connect-src 'none'` dahil kısıtlayıcı bir CSP ile sandbox'lı bir tarayıcı
 bağlamında çalışır; ana makine paketine React/Next kodu enjekte etmezler ve ana makine
-API'lerini keyfi olarak çağıramazlar. [`frontend.py`](../../deeptutor/plugins/frontend.py),
-[frontend testleri](../../tests/plugins/test_frontend.py) ve
-[örnek sayfa manifesti](../examples/learning_echo/learning_echo/frontend/page.json)
+API'lerini keyfi olarak çağıramazlar. [`frontend.py`](../../../deeptutor/plugins/frontend.py),
+[frontend testleri](../../../tests/plugins/test_frontend.py) ve
+[örnek sayfa manifesti](../../examples/learning_echo/learning_echo/frontend/page.json)
 dosyalarına bakın.
 
 ## Güven sınırları ve doğrulama

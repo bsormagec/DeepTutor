@@ -70,4 +70,4 @@ sürümü kullanmalıdır.
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/reading/extensions.py](../../deeptutor/reading/extensions.py)
+- [deeptutor/reading/extensions.py](../../../deeptutor/reading/extensions.py)

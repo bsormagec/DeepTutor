@@ -7,7 +7,7 @@ Bu doküman, DeepTutor'ın bir konteyner imajından dağıtımını ele alır: �
 Podman yolu, çalışma zamanı yapılandırması, isteğe bağlı PocketBase sidecar'ı ve
 varsayılan duruşun gerekçesini oluşturan güvenlik notları.
 
-PyPI / kaynak kurulumları için ana [README.md](../../README.md) dosyasına bakın. Bu
+PyPI / kaynak kurulumları için ana [README.md](../../../README.md) dosyasına bakın. Bu
 dosya yalnızca yayımlanmış imajın çalıştırılmasıyla ilgilidir.
 
 ---
@@ -559,9 +559,9 @@ yeniden normalize edilir.
 
 ## Uygulama ve doğrulama
 
-- [Dockerfile](../../Dockerfile)
-- [docker-compose.yml](../../docker-compose.yml)
-- [docker-compose.ghcr.yml](../../docker-compose.ghcr.yml)
-- [compose.yaml](../../compose.yaml)
-- [scripts/docker_compose.py](../../scripts/docker_compose.py)
-- [tests/scripts/test_docker_compose.py](../../tests/scripts/test_docker_compose.py)
+- [Dockerfile](../../../Dockerfile)
+- [docker-compose.yml](../../../docker-compose.yml)
+- [docker-compose.ghcr.yml](../../../docker-compose.ghcr.yml)
+- [compose.yaml](../../../compose.yaml)
+- [scripts/docker_compose.py](../../../scripts/docker_compose.py)
+- [tests/scripts/test_docker_compose.py](../../../tests/scripts/test_docker_compose.py)
