@@ -90,9 +90,9 @@ do not print API keys. Preserve my existing files and settings, and finish
 with the access URL and the results of your checks.
 ```
 
-[Geliştirici ve ajan el kitabı](../../docs-for-dev/README.md); kurulum, mimari, eklenti geliştirme, test ve sorun gidermeye ilişkin belgelerin giriş noktasıdır. [Agent Setup kılavuzu](../../docs-for-dev/AGENT_SETUP.md) etkileşimsiz CLI yapılandırması dahil tüm kurulum akışını kapsar. Kurulumu kendiniz yapmak için aşağıdaki yollardan birini seçin.
+[Geliştirici ve ajan el kitabı](../../docs-for-dev/tr/README.md); kurulum, mimari, eklenti geliştirme, test ve sorun gidermeye ilişkin belgelerin giriş noktasıdır. [Agent Setup kılavuzu](../../docs-for-dev/tr/AGENT_SETUP.md) etkileşimsiz CLI yapılandırması dahil tüm kurulum akışını kapsar. Kurulumu kendiniz yapmak için aşağıdaki yollardan birini seçin.
 
-DeepTutor dört kurulum yoluyla gelir. Hepsi aynı çalışma zamanı ana dizini düzenini paylaşır: özel ayarlar, başlattığınız dizinin altındaki `data/user/settings/` içinde (veya açıkça belirttiyseniz `DEEPTUTOR_HOME` / `deeptutor start --home` ile verilen dizinin altında) tutulur. Tam depolama düzeni, veritabanı desteği ve yedekleme notları için [Yerel Veri Kalıcılığı](../../docs-for-dev/DATA_STORAGE.md) bölümüne bakın. Tam uygulama için önerilen akış: **çalışma zamanı ana dizinini seçin → kurun → `deeptutor init` → `deeptutor start`**.
+DeepTutor dört kurulum yoluyla gelir. Hepsi aynı çalışma zamanı ana dizini düzenini paylaşır: özel ayarlar, başlattığınız dizinin altındaki `data/user/settings/` içinde (veya açıkça belirttiyseniz `DEEPTUTOR_HOME` / `deeptutor start --home` ile verilen dizinin altında) tutulur. Tam depolama düzeni, veritabanı desteği ve yedekleme notları için [Yerel Veri Kalıcılığı](../../docs-for-dev/tr/DATA_STORAGE.md) bölümüne bakın. Tam uygulama için önerilen akış: **çalışma zamanı ana dizinini seçin → kurun → `deeptutor init` → `deeptutor start`**.
 
 ### Tek komutla Docker denemesi
 
@@ -136,7 +136,7 @@ Skills, MCP hizmetleri ve bilgi tabanları atayın ya da mevcut
 erişim kurallarını koruyun. Mevcut çalışma alanları, bir seçim kaydedilene kadar şu anki erişimlerini korur.
 Atamalar, kimlik bilgilerini veya bilgi tabanı dizinlerini kopyalamadan özgün kaynaklara başvurur;
 çalışma alanına özgü beceriler paylaşılan sürümlerin yerine geçebilir.
-Bkz. [çalışma alanı kaynak atamaları](../../docs-for-dev/workspaces.md).
+Bkz. [çalışma alanı kaynak atamaları](../../docs-for-dev/tr/workspaces.md).
 
 Yürütme, `outputs/` dışında salt okunurdur. Üretilen bir dosyayı içerik çalışma alanında başka bir yere
 kopyalamak, tam olarak o kaynak ve hedef için açık bir **Allow once** onayı gerektirir.
@@ -146,7 +146,7 @@ yedeği ise Workspace ayarlarında **best effort** olarak gösterilir.
 <details>
 <summary><b>Seçenek 1 — PyPI'den kurulum</b> · tam yerel Web uygulaması + CLI, klonlama gerekmez</summary>
 
-**1.7.0 modüler kurulumu:** Web uygulaması ve CLI için `deeptutor[full]`, yalnızca çekirdek sohbet için `deeptutor` kullanın. Özellik modülleri çekirdek sürümüyle eşleşmelidir; 1.6.15 ve öncesi önceki paket düzenini kullanır. Güncel `dev` dalı üzerinde geliştirme yapmak için aşağıdaki kaynak kurulum yönergelerini izleyin veya [yerel wheel paketleri](../../docs-for-dev/MODULES.md) oluşturun. **Python 3.11–3.14** ve PATH üzerinde bir **Node.js 20+** çalışma zamanı gerekir (paketlenmiş Next.js standalone sunucusu `deeptutor start` tarafından başlatılır).
+**1.7.0 modüler kurulumu:** Web uygulaması ve CLI için `deeptutor[full]`, yalnızca çekirdek sohbet için `deeptutor` kullanın. Özellik modülleri çekirdek sürümüyle eşleşmelidir; 1.6.15 ve öncesi önceki paket düzenini kullanır. Güncel `dev` dalı üzerinde geliştirme yapmak için aşağıdaki kaynak kurulum yönergelerini izleyin veya [yerel wheel paketleri](../../docs-for-dev/tr/MODULES.md) oluşturun. **Python 3.11–3.14** ve PATH üzerinde bir **Node.js 20+** çalışma zamanı gerekir (paketlenmiş Next.js standalone sunucusu `deeptutor start` tarafından başlatılır).
 
 ```bash
 mkdir -p my-deeptutor && cd my-deeptutor
@@ -157,7 +157,7 @@ deeptutor start    # starts backend + frontend; keep the terminal open
 
 `deeptutor init`; arka uç portunu (varsayılan `8001`), ön uç portunu (varsayılan `3782`), LLM sağlayıcısını / temel URL'yi / API anahtarını / modeli, Knowledge Base / RAG için isteğe bağlı bir gömme (embedding) sağlayıcısını ve Web Search için isteğe bağlı bir arama sağlayıcısını sorar.
 
-**1.7.0'a yükseltme:** Uygulamayı durdurun ve çalışma zamanı dizininizin yedeğini alın. `python -m pip install --upgrade "deeptutor[full]==1.7.0"` komutunu kullanın, ardından `python -m pip check` ve `deeptutor module list` komutlarını çalıştırın. Eski `deeptutor-cli` paketi yüklüyse önce `python -m pip uninstall deeptutor-cli` komutunu çalıştırın, sonra yükseltme komutunu uygulayın (isteğe bağlı olarak `deeptutor-cli==1.7.0` ekleyebilirsiniz). Eski CLI paylaşılan Python dosyalarına sahiptir; bu yüzden aynı işlemde yükseltilmesi yeni çekirdeği silebilir. Paketin kaldırılması çalışma zamanı dizinindeki verilerinizi etkilemez. Aynı `DEEPTUTOR_HOME` değerini ve mevcut ayarları koruyun. 1.7.0'da yalın `pip install -U deeptutor` yalnızca çekirdeği seçer; tam uygulama kurulum profilini istemek için `[full]` kullanın. Yerel olarak derlenmiş paketler için [yerel wheel yükseltme yönergelerini](../../docs-for-dev/MODULES.md#upgrade-from-1615) izleyin.
+**1.7.0'a yükseltme:** Uygulamayı durdurun ve çalışma zamanı dizininizin yedeğini alın. `python -m pip install --upgrade "deeptutor[full]==1.7.0"` komutunu kullanın, ardından `python -m pip check` ve `deeptutor module list` komutlarını çalıştırın. Eski `deeptutor-cli` paketi yüklüyse önce `python -m pip uninstall deeptutor-cli` komutunu çalıştırın, sonra yükseltme komutunu uygulayın (isteğe bağlı olarak `deeptutor-cli==1.7.0` ekleyebilirsiniz). Eski CLI paylaşılan Python dosyalarına sahiptir; bu yüzden aynı işlemde yükseltilmesi yeni çekirdeği silebilir. Paketin kaldırılması çalışma zamanı dizinindeki verilerinizi etkilemez. Aynı `DEEPTUTOR_HOME` değerini ve mevcut ayarları koruyun. 1.7.0'da yalın `pip install -U deeptutor` yalnızca çekirdeği seçer; tam uygulama kurulum profilini istemek için `[full]` kullanın. Yerel olarak derlenmiş paketler için [yerel wheel yükseltme yönergelerini](../../docs-for-dev/tr/MODULES.md#1615ten-yükseltme) izleyin.
 
 `deeptutor start` sonrasında terminalde yazdırılan ön uç URL'sini açın — varsayılan olarak [http://127.0.0.1:3782](http://127.0.0.1:3782). Hem arka ucu hem ön ucu durdurmak için o terminalde `Ctrl+C` tuşlarına basın. Hızlı bir deneme için `deeptutor init` adımını atlamak sorun değildir; uygulama varsayılan portlarla ve boş model ayarlarıyla açılır, bunları daha sonra **Settings → Providers** ve **Language models** bölümlerinden yapılandırabilirsiniz.
 
@@ -244,7 +244,7 @@ Web uygulamasının tamamı için tek bir kapsayıcı. İmajlar GitHub Container
 - `ghcr.io/hkuds/deeptutor:latest` — en son kararlı sürüm
 - `ghcr.io/hkuds/deeptutor:<version>` — başında `v` olmadan tam sürüm (örneğin `:1.6.3`); ön sürümler yalnızca kendi sürüm etiketini alır
 
-> podman/rootless/salt okunur kök dosya sistemi dağıtımları ve kuruluma özel tam kılavuz için [CONTAINERIZATION.md](../../docs-for-dev/CONTAINERIZATION.md) dosyasına bakın.
+> podman/rootless/salt okunur kök dosya sistemi dağıtımları ve kuruluma özel tam kılavuz için [CONTAINERIZATION.md](../../docs-for-dev/tr/CONTAINERIZATION.md) dosyasına bakın.
 
 ```bash
 docker run --rm --name deeptutor \
@@ -324,7 +324,7 @@ Ardından **Ayarlar → Sağlayıcılar** bölümünde sağlayıcı Base URL de�
 
 Docker Desktop (macOS/Windows) genellikle `host.docker.internal` adını `--add-host` olmadan çözümler. Linux'ta bayrak, modern Docker Engine'de bu ana makine adını oluşturmanın taşınabilir yoludur.
 
-**Linux alternatifi — ana makine ağı (host networking):** `--network=host` ekleyin ve `-p` bayraklarını kaldırın. Kapsayıcı ana makinenin ağını doğrudan paylaşır; bu nedenle [http://127.0.0.1:3782](http://127.0.0.1:3782) adresini (veya `system.json` içindeki `frontend_port` değerini) açın. Ana makinedeki hizmetlere de `http://127.0.0.1:11434/v1` gibi olağan localhost URL'leriyle erişilebilir. Host networking kapsayıcı portlarını doğrudan ana makinede açığa çıkarır ve mevcut hizmetlerle çakışabilir — bunları loopback üzerinde tutmak için `BACKEND_HOST=127.0.0.1` ve `FRONTEND_HOST=127.0.0.1` değerlerini ayarlayın (bkz. [CONTAINERIZATION.md](../../docs-for-dev/CONTAINERIZATION.md)).
+**Linux alternatifi — ana makine ağı (host networking):** `--network=host` ekleyin ve `-p` bayraklarını kaldırın. Kapsayıcı ana makinenin ağını doğrudan paylaşır; bu nedenle [http://127.0.0.1:3782](http://127.0.0.1:3782) adresini (veya `system.json` içindeki `frontend_port` değerini) açın. Ana makinedeki hizmetlere de `http://127.0.0.1:11434/v1` gibi olağan localhost URL'leriyle erişilebilir. Host networking kapsayıcı portlarını doğrudan ana makinede açığa çıkarır ve mevcut hizmetlerle çakışabilir — bunları loopback üzerinde tutmak için `BACKEND_HOST=127.0.0.1` ve `FRONTEND_HOST=127.0.0.1` değerlerini ayarlayın (bkz. [CONTAINERIZATION.md](../../docs-for-dev/tr/CONTAINERIZATION.md)).
 
 </details>
 
@@ -497,7 +497,7 @@ bilerek silinmez.
 
 Bir konu veya proje için bir **çalışma alanı** ile başlayın. Çalışma alanının **Home**, **Learning** ve **Resources** bölümleri sohbetlerinizi, öğrenme etkinliklerinizi ve materyallerinizi barındırır. **Partners** ve **Personalization** ise çalışma alanları arasında hesabınızla birlikte kalır. Aşağıdaki tur, bu yüzeylerin nasıl birbirine bağlandığını, ardından ayarları ve çok kullanıcılı dağıtımı gösterir.
 
-Bir yanıt önceki bir kısıtı kaybediyorsa, zayıf kanıtlara dayanıyorsa veya seçilen materyalle çelişiyorsa, sorun açmadan önce [`REASONING_SAFETY_CHECKLIST.md`](../../docs-for-dev/REASONING_SAFETY_CHECKLIST.md) dosyasındaki tanılama bilgilerini toplayın.
+Bir yanıt önceki bir kısıtı kaybediyorsa, zayıf kanıtlara dayanıyorsa veya seçilen materyalle çelişiyorsa, sorun açmadan önce [`REASONING_SAFETY_CHECKLIST.md`](../../docs-for-dev/tr/REASONING_SAFETY_CHECKLIST.md) dosyasındaki tanılama bilgilerini toplayın.
 
 <div align="center">
 <img src="../../assets/figs/web-dev/overview.png" alt="DeepTutor Home ve çalışma alanı gezintisi" width="900">
@@ -653,7 +653,7 @@ Bilgi tabanları, RAG'in arkasındaki belge koleksiyonlarıdır — Chat turlar�
 <img src="../../assets/figs/web-dev/knowledge-create.png" alt="Bilgi tabanı oluşturma" width="900">
 </div>
 
-Mevcut bir Obsidian, Hermes veya Markdown kitaplığını mı taşıyorsunuz? Bağlı kasa ve dizinlenmiş kopya yolları için [Bilgi taşıma kılavuzu](../../docs-for-dev/KNOWLEDGE_MIGRATION.md) belgesine bakın.
+Mevcut bir Obsidian, Hermes veya Markdown kitaplığını mı taşıyorsunuz? Bağlı kasa ve dizinlenmiş kopya yolları için [Bilgi taşıma kılavuzu](../../docs-for-dev/tr/KNOWLEDGE_MIGRATION.md) belgesine bakın.
 
 Bilgi tabanı oluştururken **yeni oluştur** (belgeleri yükle ve dizinle), **mevcut olanı bağla** (bir dizini yerinde yeniden kullan) veya **Kiwix'i bağla** (sunulan tek bir ZIM arşivinde istek anında ara) seçeneklerinden birini seçebilirsiniz. Depolama çalışma alanını oluşturma sırasında seçin; mevcut bir bilgi tabanı, önizleme sonrasında atamalarını ve kayıtlı başvurularını koruyarak çalışma alanları arasında taşınabilir. Bir bilgi tabanı ayrıca **GitHub depolarını** (depo, dal, glob) veya **dokümantasyon sitesi URL'lerini** (sınırlı tarama derinliği ve sayfa sayısı; varsayılan olarak her 24 saatte bir yeniden eşitlenir) izleyebilir; eşitleme, eklenen, değişen ve kaldırılan içeriği karma (hash) farkıyla belirler; böylece takip edilen dokümantasyon yeniden yükleme yapmadan güncel kalır; **bağlı klasörler** ise eşitleme sırasında yeni veya değişmiş yerel dosyaları alır. Yeniden dizinleme yeni bir düz `version-N` dizini yazar ve öncekileri saklar; böylece çalışan bir dizin, yeniden oluşturma sırasında asla yok edilmez. Tek bir belge, **error** durumundaki bir tabanda bile kaldırılabilir — ayrıştırılamayan bir dosya, tümünü silip yeniden oluşturmaya gerek kalmadan çıkarılır. Belge ayrıştırma — Text-only, MinerU, Docling, Tika, markitdown, PyMuPDF4LLM veya LiteParse — ve isteğe bağlı bir görsel açıklama modeli **Settings → Knowledge & documents** bölümünde seçilir; yerel model indirmeleri varsayılan olarak kapalıdır. Docling ayrıca bir Docling Serve sunucusuna karşı **remote** modunda çalışabilir (yerel kurulum veya model gerekmez); bu, ilgili sayfada (`mode=remote`, bir sunucu temel URL'si ve isteğe bağlı bir API anahtarı) ya da `DOCLING_MODE` / `DOCLING_API_BASE_URL` / `DOCLING_API_TOKEN` ortam değişkenleriyle yapılandırılır. Tika yalnızca uzaktan çalışır ve o sayfada yapılandırılan Apache Tika sunucusunu hedefler. CLI, yaşam döngüsünü `list/info/create/connect-kiwix/add/search/eval/eval-diff/set-default/delete` komutları, kaynak ekleme/kaldırma komutları, `list-sources` ve `sync` ile yansıtır.
 
@@ -731,7 +731,7 @@ Oturum açma ve **Refresh models** sırasında DeepTutor, resmî npm kayıt deft
 
 Başarılı sürüm geçmişi, aynı hesabın belirteç yenilemesinden ve katalog kimlik doğrulama hatalarından sağ çıkar; geçersiz kılınmış model verilerini veya ETag'leri yeniden kullanılabilir hale getirmez. Oturumu kapatmak, sürüm geçmişi dahil o hesabın yerel önbelleğini temizler. Olağan durum okumaları ve çıkarım npm'yi sorgulamaz. Yeni katalog girdileri, önceden seçtiğiniz bir modelin yerini almaz ve öğrenme oturumlarını yeniden başlatmaz; katalogda görünmek, tam çıkarım protokolü uyumluluğunu kanıtlamaz. Arka planda çalışan bir sürüm güncelleyicisi ve kullanıcıya açık bir sürüm ayarı yoktur.
 
-Varsayılan yerel Docker ve Podman dağıtımları ayrı geri döngü ağları kullanır ve oturum açma sırasında geçici bir köprüye ihtiyaç duyar. Kesin Docker, Compose, Podman ve kaldırma komutları için [geçici yerel Codex OAuth köprüsü kılavuzunu](../../docs-for-dev/CONTAINERIZATION.md#temporary-local-codex-oauth-bridge) izleyin.
+Varsayılan yerel Docker ve Podman dağıtımları ayrı geri döngü ağları kullanır ve oturum açma sırasında geçici bir köprüye ihtiyaç duyar. Kesin Docker, Compose, Podman ve kaldırma komutları için [geçici yerel Codex OAuth köprüsü kılavuzunu](../../docs-for-dev/tr/CONTAINERIZATION.md#geçici-yerel-codex-oauth-köprüsü) izleyin.
 
 Uzak bir dağıtımda, tarayıcının `localhost` adresi ile sunucunun `localhost` adresi farklı makinelerdir; bu nedenle sıradan bir ters vekil sunucu tek başına tarayıcının localhost geri çağrısını sunucuya taşıyamaz. Geri çağrı köprüsü olarak bir SSH tüneli kullanın. Tünel, zaten yayımlanmış Web bağlantı noktasına ulaşır; Next.js yalnızca tam geri çağrı yolunu genel geri çağrı aracısına yeniden yazar ve aracı, özgün OAuth işlemine yönlendirmeden önce `state` değerini doğrular. Geri çağrı dinleyicisi arka uç geri döngüsünde kalır, `1455` ve `1457` bağlantı noktaları yayımlanmaz ve bu yol varsayılan Docker köprü ağını destekler.
 
@@ -815,7 +815,7 @@ SID=$(deeptutor run deep_research "Survey 2026 papers on RAG" \
 deeptutor run deep_question "Quiz me on that survey" --session "$SID" --format json
 ```
 
-Depo, CLI için kısa bir devir teslim belgesi olan kök dizindeki [`SKILL.md`](../../SKILL.md) dosyasını içerir. Ajanınızdan bu dosyayı açıkça okumasını isteyin; [Agent Setup kılavuzu](../../docs-for-dev/AGENT_SETUP.md) ise kurulum ve yapılandırmayı kapsar. `deeptutor run` komutunu bir LangChain / AutoGen döngüsünde araç olarak da sarmalayabilirsiniz. Tam tarifler: [Agent Handoff](https://deeptutor.info/docs/cli/agent-handoff/).
+Depo, CLI için kısa bir devir teslim belgesi olan kök dizindeki [`SKILL.md`](../../SKILL.md) dosyasını içerir. Ajanınızdan bu dosyayı açıkça okumasını isteyin; [Agent Setup kılavuzu](../../docs-for-dev/tr/AGENT_SETUP.md) ise kurulum ve yapılandırmayı kapsar. `deeptutor run` komutunu bir LangChain / AutoGen döngüsünde araç olarak da sarmalayabilirsiniz. Tam tarifler: [Agent Handoff](https://deeptutor.info/docs/cli/agent-handoff/).
 
 </details>
 
@@ -895,7 +895,7 @@ deeptutor chat                              # restart the CLI; use start for an 
 
 **Tarayıcıda:** **Settings → Runtime status → Modules** sayfası modül durumunu ve ilgili terminal komutlarını gösterir. Paket değişiklikleri için ortamın durdurulmuş olması gerekir ve bu değişiklikler CLI üzerinden yapılır. **Chat → Customize page** ile **Learning → New learning → Customize page** kişisel sayfa tercihlerini anında değiştirir; bir girişi gizlemek modülünü kaldırmaz ve erişimi iptal etmez.
 
-1.7.0 paket ailesi, çekirdek ve özellik wheel paketleri arasında eşleşen sürümler kullanır. Yerel wheel kurulumu için `module install` komutuna `--wheelhouse /path/to/wheels` parametresini verin. Wheel paketlerinin oluşturulması ve dağıtım ayrıntıları için [modül kurulumu ve kaynak koddan geliştirme](../../docs-for-dev/MODULES.md) belgesine bakın.
+1.7.0 paket ailesi, çekirdek ve özellik wheel paketleri arasında eşleşen sürümler kullanır. Yerel wheel kurulumu için `module install` komutuna `--wheelhouse /path/to/wheels` parametresini verin. Wheel paketlerinin oluşturulması ve dağıtım ayrıntıları için [modül kurulumu ve kaynak koddan geliştirme](../../docs-for-dev/tr/MODULES.md) belgesine bakın.
 
 </details>
 
