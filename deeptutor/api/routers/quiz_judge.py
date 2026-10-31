@@ -81,7 +81,7 @@ _JUDGE_SYSTEM_PROMPTS = {
         "veya neyi eksik bıraktığı ve bunun nasıl düzeltileceği.\n"
         "- Birden fazla makul yanıt mümkünse öğrencinin iyi yaptığı yönleri kabul et.\n"
         "- Doğrudan bu öğrencinin yanıtına odaklan; genel bir ders anlatma.\n"
-        "- Türkçe yanıt ver ve öğrenciye \"sen\" diye hitap et."
+        '- Türkçe yanıt ver ve öğrenciye "sen" diye hitap et.'
     ),
 }
 
