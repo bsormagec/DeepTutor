@@ -274,8 +274,8 @@ olmadan raporlanır.
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/services/rag/visual_assets.py](../../../deeptutor/services/rag/visual_assets.py)
-- [deeptutor/services/rag/source_pages.py](../../../deeptutor/services/rag/source_pages.py)
-- [deeptutor/services/parsing/engines/mineru/](../../../deeptutor/services/parsing/engines/mineru/)
-- [deeptutor/learning/visual_practice.py](../../../deeptutor/learning/visual_practice.py)
-- [tests/services/rag/test_source_visual_grounding.py](../../../tests/services/rag/test_source_visual_grounding.py)
+- [deeptutor/services/rag/visual_assets.py](../../deeptutor/services/rag/visual_assets.py)
+- [deeptutor/services/rag/source_pages.py](../../deeptutor/services/rag/source_pages.py)
+- [deeptutor/services/parsing/engines/mineru/](../../deeptutor/services/parsing/engines/mineru/)
+- [deeptutor/learning/visual_practice.py](../../deeptutor/learning/visual_practice.py)
+- [tests/services/rag/test_source_visual_grounding.py](../../tests/services/rag/test_source_visual_grounding.py)

@@ -1,11 +1,11 @@
 # DeepTutor geliştirici ve ajan el kitabı
 
-> 🇹🇷 Bu dizin, [İngilizce el kitabının](../../README.md) Türkçe çevirisidir. Kod, komut ve yapılandırma anahtarları orijinaliyle aynıdır; içerik farklılaşırsa İngilizce (kaynak) sürüm esas alınır.
+> 🇹🇷 Bu dizin, [İngilizce el kitabının](../README.md) Türkçe çevirisidir. Kod, komut ve yapılandırma anahtarları orijinaliyle aynıdır; içerik farklılaşırsa İngilizce (kaynak) sürüm esas alınır.
 
 DeepTutor'ı kurmak, sorunlarını teşhis etmek veya değiştirmek için buradan başlayın. Bu el kitabı
 **1.7.0 kaynak ağacını** anlatır; başka bir sürümle çalışırken aynı etiketteki
 dokümantasyonu kullanın. Sürüm için yetkili kaynak
-[`deeptutor/__version__.py`](../../../deeptutor/__version__.py) dosyasıdır. Aşağıdaki komutlar,
+[`deeptutor/__version__.py`](../../deeptutor/__version__.py) dosyasıdır. Aşağıdaki komutlar,
 bir sayfa aksini belirtmedikçe depo kök dizininden çalıştırılır.
 
 ## Okuma yolunu seçin
@@ -20,8 +20,8 @@ bir sayfa aksini belirtmedikçe depo kök dizininden çalıştırılır.
 | Akışı veya belleği incelemek | [Olaylar ve ilerleme](EVENTS_AND_PROGRESS.md) → [Çalışma zamanı tasarımı](RUNTIME_DESIGN.md) | Kalıcılık/yeniden oynatma ve iptal kanıtı |
 | Dağıtmak veya yükseltmek | [Modüller](MODULES.md) → [Konteynerler](CONTAINERIZATION.md) → [Depolama](DATA_STORAGE.md) | Eşleşen sürümler, korunan veriler, hazır olma durumu ve temsili bir tur |
 
-Terminal kullanabilen bir ajan, düzenlemeden önce bu dizini, [AGENTS.md](../../../AGENTS.md) dosyasını ve
-görevin kılavuzunu okumalıdır. [SKILL.md](../../../SKILL.md), CLI için derli toplu
+Terminal kullanabilen bir ajan, düzenlemeden önce bu dizini, [AGENTS.md](../../AGENTS.md) dosyasını ve
+görevin kılavuzunu okumalıdır. [SKILL.md](../../SKILL.md), CLI için derli toplu
 başvuru kaynağıdır. Bir örneği izlemeden önce çalışma kopyasını (checkout), çalışma ağacındaki değişiklikleri, Python ortamını ve
 çalışma zamanı dizinini (runtime home) inceleyin. Mevcut kullanıcı verilerini ve
 kimlik bilgilerini, tek kullanımlık test fixture'larından ayrı tutun. Başarısız bir

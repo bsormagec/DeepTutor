@@ -91,5 +91,5 @@ Beceriler sayfasında "Account shared skills" ile belirli bir çalışma alanın
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/services/workspace/](../../../deeptutor/services/workspace/)
-- [deeptutor/services/partners/workspace_binding.py](../../../deeptutor/services/partners/workspace_binding.py)
+- [deeptutor/services/workspace/](../../deeptutor/services/workspace/)
+- [deeptutor/services/partners/workspace_binding.py](../../deeptutor/services/partners/workspace_binding.py)

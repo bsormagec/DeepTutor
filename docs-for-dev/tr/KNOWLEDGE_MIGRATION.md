@@ -77,6 +77,6 @@ CLI, desteklenen dosyaları `--docs-dir` altından özyinelemeli olarak toplar, 
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/capabilities/obsidian/vault.py](../../../deeptutor/capabilities/obsidian/vault.py)
-- [deeptutor/api/routers/knowledge.py](../../../deeptutor/api/routers/knowledge.py)
-- [deeptutor_cli/kb.py](../../../deeptutor_cli/kb.py)
+- [deeptutor/capabilities/obsidian/vault.py](../../deeptutor/capabilities/obsidian/vault.py)
+- [deeptutor/api/routers/knowledge.py](../../deeptutor/api/routers/knowledge.py)
+- [deeptutor_cli/kb.py](../../deeptutor_cli/kb.py)

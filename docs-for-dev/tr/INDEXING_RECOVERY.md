@@ -48,6 +48,6 @@ iptal edilemez.
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/knowledge/indexing_run.py](../../../deeptutor/knowledge/indexing_run.py)
-- [deeptutor/services/parsing/cache.py](../../../deeptutor/services/parsing/cache.py)
-- [tests/knowledge/test_indexing_run.py](../../../tests/knowledge/test_indexing_run.py)
+- [deeptutor/knowledge/indexing_run.py](../../deeptutor/knowledge/indexing_run.py)
+- [deeptutor/services/parsing/cache.py](../../deeptutor/services/parsing/cache.py)
+- [tests/knowledge/test_indexing_run.py](../../tests/knowledge/test_indexing_run.py)

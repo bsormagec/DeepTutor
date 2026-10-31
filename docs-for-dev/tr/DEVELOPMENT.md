@@ -26,7 +26,7 @@ dosyaları, onlara ihtiyaç duyan özellikler için ayrı önkoşullar olarak ka
 
 Güncellemeden önce `git status`, etkin dalı ve uzak depoları inceleyin.
 `dev` dalına karşı geliştirin; PR hedefleri için
-[katkı politikasını](../../../CONTRIBUTING.md) izleyin. Eşzamanlı çalışmanın yalıtım
+[katkı politikasını](../../CONTRIBUTING.md) izleyin. Eşzamanlı çalışmanın yalıtım
 gerektirdiği durumlarda uygun bir görev checkout'unu yeniden kullanın veya ayrı
 bir worktree kullanın. İlgisiz düzenlemeleri koruyun. Çalışma zamanı verilerini
 ve test çıktılarını Git dışında tutun.

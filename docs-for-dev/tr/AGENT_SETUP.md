@@ -5,7 +5,7 @@
 Bu kılavuz, bir kullanıcı için DeepTutor'u kuran, yapılandıran ve doğrulayan
 veya mevcut bir kurulumdaki sorunları araştıran harici bir ajana yöneliktir.
 Mevcut bir sorun için kurulumu tekrarlamak yerine [Sorun giderme](#6-sorun-giderme)
-bölümüyle başlayın. CLI'a genel bakış için [SKILL.md](../../../SKILL.md) dosyasını okuyun.
+bölümüyle başlayın. CLI'a genel bakış için [SKILL.md](../../SKILL.md) dosyasını okuyun.
 Terminal ve dosya erişimine ihtiyacınız vardır; bu akış MCP veya ajana özgü bir
 eklenti gerektirmez.
 
@@ -311,6 +311,6 @@ kanıta göre seçin; her sorun için her komutu çalıştırmanız gerekmez.
 
 ## Uygulama ve doğrulama
 
-- [deeptutor_cli/setup_config.py](../../../deeptutor_cli/setup_config.py)
-- [deeptutor_cli/doctor.py](../../../deeptutor_cli/doctor.py)
-- [tests/cli/test_agent_setup.py](../../../tests/cli/test_agent_setup.py)
+- [deeptutor_cli/setup_config.py](../../deeptutor_cli/setup_config.py)
+- [deeptutor_cli/doctor.py](../../deeptutor_cli/doctor.py)
+- [tests/cli/test_agent_setup.py](../../tests/cli/test_agent_setup.py)

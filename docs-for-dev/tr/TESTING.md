@@ -65,14 +65,14 @@ npm run contracts:check
 `npm run check` ise üretim derlemesini ve rota bütçelerini ekler. Arka uç
 şemalarını değiştirdikten sonra `npm run contracts:generate` komutunu kullanın,
 ardından üretilen farkı inceleyip commit'leyin. Üreteç
-[`web/contracts/`](../../../web/contracts/) dizininin sahibidir ve
-[Python dışa aktarma betiğini](../../../scripts/export_frontend_contracts.py) çağırır.
+[`web/contracts/`](../../web/contracts/) dizininin sahibidir ve
+[Python dışa aktarma betiğini](../../scripts/export_frontend_contracts.py) çağırır.
 
 Render edilen bileşen testleri Vitest ve Testing Library kullanır. Node
 testleri saf sözleşmeleri ve durum mantığını kapsar. Playwright
 `npm run audit` komutu `WEB_BASE_URL` adresinde çalışan bir ön yüz bekler;
 kritik ve çoklu worker projelerinin ayrı fixture gereksinimleri
-[`playwright.config.ts`](../../../web/playwright.config.ts) dosyasındadır. Tarayıcı
+[`playwright.config.ts`](../../web/playwright.config.ts) dosyasındadır. Tarayıcı
 üzerinde değişiklik yapan işlemleri bir öğrenenin verisinin tek kopyası üzerinde
 çalıştırmayın.
 
@@ -83,10 +83,10 @@ kontrolleri için [Modüller → Doğrulama](MODULES.md#doğrulama) bölümünü
 Paket kaldırmayı test etmek için geliştirme yorumlayıcısını kullanmayın.
 
 Deneysel TypeScript motorunun
-[`packages/chat-engine/`](../../../packages/chat-engine/) altında kendi `npm test`
+[`packages/chat-engine/`](../../packages/chat-engine/) altında kendi `npm test`
 komutu vardır; buna ek olarak Python köprüsü ve uygulama uyumluluk testleri
-bulunur. Kanonik matris [`tests.yml`](../../../.github/workflows/tests.yml) ve
-[`modules.yml`](../../../.github/workflows/modules.yml) dosyalarındadır.
+bulunur. Kanonik matris [`tests.yml`](../../.github/workflows/tests.yml) ve
+[`modules.yml`](../../.github/workflows/modules.yml) dosyalarındadır.
 
 `deeptutor doctor --online` gerçek bir model isteği yapar. İstem önbelleği
 (prompt-cache), video render ve çoklu worker kabul testleri açıkça etkinleştirme

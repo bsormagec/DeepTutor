@@ -189,6 +189,6 @@ Web uygulaması tek bir ön yüz dağıtımı olarak kalır; bağımsız olarak 
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/modules/manifests/](../../../deeptutor/modules/manifests/)
-- [scripts/build_modules.py](../../../scripts/build_modules.py)
-- [scripts/check_module_install.py](../../../scripts/check_module_install.py)
+- [deeptutor/modules/manifests/](../../deeptutor/modules/manifests/)
+- [scripts/build_modules.py](../../scripts/build_modules.py)
+- [scripts/check_module_install.py](../../scripts/check_module_install.py)

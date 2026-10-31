@@ -91,6 +91,6 @@ bilgileri, özel sohbet metinleri ve yüklenen öğrenme materyalleri içerebili
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/runtime/home.py](../../../deeptutor/runtime/home.py)
-- [deeptutor/services/path_service.py](../../../deeptutor/services/path_service.py)
-- [deeptutor/services/workspace/context.py](../../../deeptutor/services/workspace/context.py)
+- [deeptutor/runtime/home.py](../../deeptutor/runtime/home.py)
+- [deeptutor/services/path_service.py](../../deeptutor/services/path_service.py)
+- [deeptutor/services/workspace/context.py](../../deeptutor/services/workspace/context.py)

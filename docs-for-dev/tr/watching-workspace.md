@@ -26,5 +26,5 @@ Oynatmayı, ileri/geri sarmayı, transkript arama/takibini, zaman damgası atıf
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/reading/](../../../deeptutor/reading/)
-- [web/components/reading/](../../../web/components/reading/)
+- [deeptutor/reading/](../../deeptutor/reading/)
+- [web/components/reading/](../../web/components/reading/)

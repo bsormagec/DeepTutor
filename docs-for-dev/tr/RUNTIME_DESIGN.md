@@ -19,17 +19,17 @@ korumak için tembel sarmalayıcılar kullanabilir.
 mantığını değiştirirken çapa/gezinme etkinleştirmesini ve kimlik doğrulama
 single-flight davranışını koruyun. Yalnızca sıcak süreç zamanlamasıyla değil,
 içe aktarma sınırı testleri ve ön yüz rota bütçeleriyle doğrulayın. Kaynak
-sahipleri: [kayıt defterleri](../../../deeptutor/runtime/registry/),
-[modül birleştirme](../../../deeptutor/modules/) ve
-[ayarlar](../../../web/features/settings/).
+sahipleri: [kayıt defterleri](../../deeptutor/runtime/registry/),
+[modül birleştirme](../../deeptutor/modules/) ve
+[ayarlar](../../web/features/settings/).
 
 ## Kısa ömürlü ayrıştırma worker'ları
 
 Ağır eşzamanlı çıkarma işlemleri, bir iş parçacığında çalıştırılsa bile uzun
 ömürlü bir API sürecinde yerel kütüphane belleğini tutabilir.
-[Yalıtılmış worker sınırı](../../../deeptutor/runtime/isolated_worker.py), dahili
+[Yalıtılmış worker sınırı](../../deeptutor/runtime/isolated_worker.py), dahili
 içe aktarılabilir bir çağrılabilir ve özel geçici girdi/sonuç dosyaları
-kullanarak [`worker_process.py`](../../../deeptutor/runtime/worker_process.py) üzerinden
+kullanarak [`worker_process.py`](../../deeptutor/runtime/worker_process.py) üzerinden
 kısa ömürlü bir yorumlayıcı başlatır.
 
 Bu, güvenilir dahili IPC'dir. Serileştirilmiş Python nesneleri, güvenilmeyen
@@ -42,13 +42,13 @@ Zaman aşımı ve iptal, dönmeden önce süreç ağacını sonlandırmalı ve b
 (join). Eşzamanlılık `DEEPTUTOR_ISOLATED_WORKERS` ile sınırlandırılır
 (varsayılan iki); çağrı noktaları varsayılan zaman aşımını geçersiz kılabilir.
 Platforma özgü temizliği ve sonuç/hata geri yüklemesini
-[worker testleri](../../../tests/runtime/test_isolated_worker.py) kapsamında tutun.
+[worker testleri](../../tests/runtime/test_isolated_worker.py) kapsamında tutun.
 Ayrıştırıcı hataları, boş ama başarılı bir çıkarmadan ayırt edilebilir kalmalıdır.
 
 ## Özel model geçmişi
 
 Görüntülenen mesajlar ve sağlayıcıya hazır model geçmişi farklı amaçlara hizmet
-eder. [`model_history.py`](../../../deeptutor/services/session/model_history.py),
+eder. [`model_history.py`](../../deeptutor/services/session/model_history.py),
 hazırlanmış girdiyi, anlık görüntüleri, model/araç mesajlarını, yeniden oynatma
 meta verilerini ve istek parmak izlerini içeren sürümlü, özel bir `model_turn`
 saklar. Herkese açık oturum yanıtları ve dışa aktarımlar bunu gizler. Geçerli
@@ -75,10 +75,10 @@ kanıtlamazlar. Faturalandırılan/önbellek isabeti davranışının kanıtı g
 sağlayıcı kullanım sayaçlarıdır; rota değişiklikleri, tahliye, araç değişiklikleri
 ve sıkıştırma yeniden kullanımı geçersiz kılabilir.
 
-[Model geçmişi regresyon testleri](../../../tests/services/session/test_model_history.py)
-ve [istek önbelleği testleri](../../../tests/services/llm/test_request_cache.py) ile
+[Model geçmişi regresyon testleri](../../tests/services/session/test_model_history.py)
+ve [istek önbelleği testleri](../../tests/services/llm/test_request_cache.py) ile
 başlayın. İsteğe bağlı
-[istem önbelleği entegrasyon testi](../../../tests/integration/test_prompt_cache.py),
+[istem önbelleği entegrasyon testi](../../tests/integration/test_prompt_cache.py),
 yapılandırılmış gerçek sağlayıcı ile sentetik girdiler kullanır:
 
 ```bash

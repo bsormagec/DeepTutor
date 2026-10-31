@@ -9,14 +9,14 @@ hiçbir Python bağımlılığı yoktur.
 
 ## Paket düzeni
 
-- [Manifest](../../../../examples/learning_echo/learning_echo/deeptutor.plugin.json): eklenti kimliği, izinler
+- [Manifest](../../../examples/learning_echo/learning_echo/deeptutor.plugin.json): eklenti kimliği, izinler
   ve dört uzantı bildirimi.
-- [Worker](../../../../examples/learning_echo/learning_echo/worker.py): açıklamalar, araç yürütme, yetenek
+- [Worker](../../../examples/learning_echo/learning_echo/worker.py): açıklamalar, araç yürütme, yetenek
   akışı ve JSON HTTP yanıtları.
-- [Sayfa manifesti](../../../../examples/learning_echo/learning_echo/frontend/page.json): açıkça belirtilmiş statik varlık
-  kümesi; [index.html](../../../../examples/learning_echo/learning_echo/frontend/index.html) ve
-  [app.js](../../../../examples/learning_echo/learning_echo/frontend/app.js) sandbox içindeki sayfayı uygular.
-- [Derleme meta verileri](../../../../examples/learning_echo/pyproject.toml): worker'ı, manifesti ve varlıkları paketler.
+- [Sayfa manifesti](../../../examples/learning_echo/learning_echo/frontend/page.json): açıkça belirtilmiş statik varlık
+  kümesi; [index.html](../../../examples/learning_echo/learning_echo/frontend/index.html) ve
+  [app.js](../../../examples/learning_echo/learning_echo/frontend/app.js) sandbox içindeki sayfayı uygular.
+- [Derleme meta verileri](../../../examples/learning_echo/pyproject.toml): worker'ı, manifesti ve varlıkları paketler.
 
 ## Derleme ve inceleme
 

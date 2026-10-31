@@ -81,5 +81,5 @@ What I already tried:
 
 ## Uygulama ve doğrulama
 
-- [deeptutor/agents/loop/](../../../deeptutor/agents/loop/)
-- [deeptutor/services/rag/](../../../deeptutor/services/rag/)
+- [deeptutor/agents/loop/](../../deeptutor/agents/loop/)
+- [deeptutor/services/rag/](../../deeptutor/services/rag/)
